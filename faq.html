@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./faq.css" />
+  </head>
+  <body>
+    <section class="faq-container">
+      <h1 id="fak-title">frequently asked question</h1>
+      <div class="input-container">
+        <input
+          type="text"
+          placeholder="enter to Search"
+          id="input"
+          onkeyup="filterFAQ()"
+        />
+      </div>
+      <div class="fak-item">
+        <button class="fak-question">
+          What is check in and out time <span class="arrow"> 1 </span>
+        </button>
+        <div class="answer">
+          <p>the check in time is 2:00:00 and check out is 11:00:00</p>
+        </div>
+      </div>
+      <div class="fak-item">
+        <button class="fak-question">
+          do you offer free Wifi services? <span class="arrow"> 1 </span>
+        </button>
+        <div class="answer">
+          <p>yes free wifi is available 24 hours in the all rooms</p>
+        </div>
+      </div>
+      <div class="fak-item">
+        <button class="fak-question">
+          is pet are allawed to bring in <span class="arrow"> 1 </span>
+        </button>
+        <div class="answer">
+          <p>yes they are allowed but those under weight of 10kg only</p>
+        </div>
+      </div>
+    </section>
+    <script src="./faq.js"></script>
+  </body>
+</html>

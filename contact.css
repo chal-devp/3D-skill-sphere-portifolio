@@ -1,0 +1,41 @@
+.golden-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* The Professional "Golden" Focus */
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #D4AF37;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+}
+
+.gold-submit {
+    background: #D4AF37;
+    color: white;
+    padding: 15px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gold-submit:hover {
+    background: #B8962E; /* Slightly darker gold on hover */
+}
+a{
+    font-size: 40px;
+}

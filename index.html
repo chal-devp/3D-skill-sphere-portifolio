@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Hotel | Excellence</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-dv">
+        <div class="image-container">
+          <img src="./logoimage.png" alt="Logo" />
+          <a href="#">golden</a>
+        </div>
+
+        <nav class="nav-container">
+          <ul class="nav-links">
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#about-container" id="about">About</a></li>
+            <li><a href="#" id="servic">Services</a></li>
+            <li><a href="#" id="conatc">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="textside">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing <br />
+          Unde accusamus provident eum eaque libero facere,<br />
+          iusto fuga porro, animi ad, sint inventore. <br />
+          Debitis inventore est officia sint placeat ipsa laborum!
+        </p>
+        <h2>Welcome to Luxury</h2>
+      </div>
+      <div class="img-hover-container">
+        <img src="./imag.jpg" alt="Hotel" />
+        <img src="./image.jpg" alt="Hotel" />
+        <img src="./background.jpg" alt="Hotel" />
+      </div>
+      <div class="btn">
+        <button onclick="prevSlide()" id="prev-btn">&#10094;</button>
+        <button onclick="nextSlide()" id="next-btn">&#10095;</button>
+      </div>
+      <div class="slide-indicator">
+        <button class="dots" onclick="slider('0')">.</button>
+        <button class="dots" onclick="slider('1')">.</button>
+        <button class="dots" onclick="slider('2')">.</button>
+      </div>
+    </header>
+    <section class="about-container">
+      <div class="about">
+        <div class="noteofabouts">
+          <h2>Our Story</h2>
+          <p>Built for excellence since 2026.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="imageofabout">
+          <img src="./image.jpg" alt="About" />
+          <h3>Tradition of Gold</h3>
+        </div>
+      </div>
+    </section>
+    <section class="mission">
+      <div class="missionnote">
+        <h2>Our Mission</h2>
+        <p>To provide world-class comfort.</p>
+      </div>
+      <div class="missionimage">
+        <img src="./mission.jpg" alt="Mission" />
+      </div>
+    </section>
+    <section class="services">
+      <div class="cards">
+        <div class="pizza">
+          <img src="./hamburger.jpg" alt="Pizza" />
+          <h3>Gourmet Dining</h3>
+        </div>
+        <div class="sandwich">
+          <img src="./pizza.jpg" alt="Sandwich" />
+          <h3>Quick Bites</h3>
+        </div>
+        <div class="humberger">
+          <img src="./sandwich.jpg" alt="Sandwich" />
+          <h3>Quick Bites</h3>
+        </div>
+      </div>
+      <div class="book">
+        <a href="contact.html" class="book-btn">Book Now</a>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="form">
+        <form class="contactform" id="goldenContactForm">
+          <label for="name">full name</label>
+          <input
+            type="text"
+            placeholder="Your Name"
+            required
+            id="name"
+            name="name"
+          /><br />
+          <label for="phone">phone</label>
+          <input
+            type="tel"
+            pattern="^\+?[0-9]{10,15}$"
+            title="invalid"
+            placeholder="+251 940938451"
+            name="phone"
+            required
+            id="phone"
+          /><br />
+          <label for="massage">massage</label>
+          <textarea
+            placeholder="Your Message"
+            id="massage"
+            name="massage"
+          ></textarea
+          ><br />
+          <button type="submit">Send</button>
+        </form>
+        <div class="pyhsicalform">
+          <h3>contact us</h3>
+          <h4>email eddress: example@email.com</h4>
+          <h4>phone number: +251 978564328</h4>
+          <a href="#"><p>visit us today</p></a>
+        </div>
+      </div>
+    </section>
+    <footer class="golden-footer">
+      <div class="footer-container">
+        <div class="footer-slogan">
+          <h3>smell gentels</h3>
+          <p>golden Hotel is the choice of celebrity</p>
+        </div>
+        <div class="footer-sce1">
+          <ul>
+            <li><a href="#">services</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="faq.html">faq</a></li>
+            <li><a href="#">accessblity</a></li>
+          </ul>
+        </div>
+        <div class="footer-sce2">
+          <ul>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">help</a></li>
+            <li><a href="#">get help</a></li>
+          </ul>
+        </div>
+        <div class="footer-sce3">
+          <ul>
+            <li><a href="#">more</a></li>
+            <li><a href="#">product</a></li>
+            <li><a href="#">online</a></li>
+            <li><a href="#">massage</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sub-footer">
+        <p>&copy; 2026 Golden Hotel. Built for Excellence.</p>
+      </div>
+    </footer>
+    <button id="backToTop" title="Return to Top">↑</button>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./contact.css" />
+  </head>
+  <bodyy>
+    <section class="contact-section">
+      <a href="index1.html">home</a>
+      <h2 class="gold-heading">Connect with the Concierge</h2>
+      <form id="goldenContactForm" class="golden-form">
+        <div class="form-group">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Full Name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <!-- Pattern validation ensures a professional 10+ digit format -->
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone Number (e.g. +1 234 567 890)"
+            pattern="[0-9+ ]{10,15}"
+            title="Please enter a valid phone number"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="How may we elevate your stay?"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="gold-submit">Send Inquiry</button>
+      </form>
+      <div id="formFeedback" class="hidden-message"></div>
+    </section>
+    <script src="./contact.js"></script>
+  </bodyy>
+</html>
